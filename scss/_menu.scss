@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.navbar {
+  background-color: $azul2;
+  padding: $espacio-small $espacio-medium;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-brand {
+    color: white;
+    font-family: $fuente-secundaria;
+    font-size: $font-size-base;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $amarillo;
+    }
+  }
+
+  .navbar-toggler {
+    border: 2px solid $amarillo;
+    padding: 6px;
+    .navbar-toggler-icon {
+      filter: brightness(0) invert(1); // blanco
+    }
+  }
+
+  .navbar-collapse {
+    background-color: $azul2;
+    margin-top: $espacio-small;
+
+    .nav-link {
+      font-family: $fuente-secundaria;
+      font-size: $font-size-base;
+      color: white;
+      padding: $espacio-small $espacio-medium;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $amarillo;
+        color: $azul1;
+      }
+    }
+  }
+}

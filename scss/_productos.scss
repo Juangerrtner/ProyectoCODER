@@ -1,0 +1,100 @@
+@use 'variables' as *;
+
+/* Contenedor principal */
+.main-content {
+    background-color: #f8f9fa;
+    padding: $espacio-large 0;
+}
+
+/* Título principal */
+.main-content h1 {
+    font-family: $fuente-principal;
+    font-size: $font-size-h1;
+    color: $azul1;
+    text-align: center;
+    margin-bottom: $espacio-medium;
+}
+
+/* Subtítulo */
+.main-content .lead {
+    font-family: $fuente-secundaria;
+    font-size: $font-size-base;
+    color: $azul2;
+    text-align: center;
+    margin-bottom: $espacio-large;
+}
+
+/* Catálogo de productos */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $espacio-medium;
+}
+
+/* Producto individual */
+.producto {
+    flex: 0 0 23%; /* 4 productos por fila */
+    margin-bottom: $espacio-medium;
+    box-sizing: border-box; /* Asegura que el padding y el borde no desborden */
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            padding: $espacio-small;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .card-title {
+                font-family: $fuente-principal;
+                font-size: 1.1rem;
+                color: $azul1;
+                font-weight: bold;
+                margin-bottom: $espacio-small;
+            }
+
+            .card-text {
+                font-family: $fuente-secundaria;
+                font-size: 1rem;
+                color: $azul2;
+                margin-bottom: $espacio-small;
+            }
+
+            .btn-warning {
+                background-color: $amarillo;
+                color: #000;
+                border: none;
+                padding: 10px 20px;
+                font-family: $fuente-principal;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($amarillo, 10%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+

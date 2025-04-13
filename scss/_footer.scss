@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $azul2;
+    padding: $espacio-large 0;
+    text-align: left;
+    border-top: 2px solid $amarillo;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    a {
+        color: #feffff;
+        font-family: $fuente-secundaria;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            color: $amarillo;
+            transform: scale(1.1);
+        }
+    }
+}

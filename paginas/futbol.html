@@ -1,246 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fútbol</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fútbol - Plantel Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body class="futbol">
+  <header class="header">
+    <div class="header-lado-izquierdo">
+      <a href="../index.html">
+        <img src="../img/boca-logo.png" alt="Escudo de Boca Juniors" class="logo" />
+      </a>
+      <a href="../index.html">
+        <img src="../img/cabj-banner.png" alt="Banner CABJ" class="banner" />
+      </a>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <div class="header-lado-izquierdo">
-            <a href="../index.html"><img src="../img/boca-logo.png" alt="boca-logo"></a>
-            <a href="../index.html"><img src="../img/cabj-banner.png" alt="cabj-banner"></a>
-        </div>
-    </header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+        aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/elclub.html">El Club</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../paginas/futbol.html" aria-current="page">Fútbol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/labombonera.html">La Bombonera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/productos.html">Productos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Menú de navegación BOOTSTRAP -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/elclub.html">El Club</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/futbol.html">Fútbol</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/labombonera.html">La Bombonera</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../paginas/sitiosdeboca.html">Sitios de Boca</a>
-                    </li>
-                </ul>
+  <main class="main-content">
+
+    <!-- Lista de jugadores -->
+    <div class="plantel">
+        <h2>El Plantel - Primera División</h2>
+        <div class="plantel-contenedor">
+            <div class="jugador">
+                <img src="../img/1.png" alt="Sergio Romero">
+                <strong>1</strong> Sergio Romero
+            </div>
+            <div class="jugador">
+                <img src="../img/2.png" alt="Cristian Lema">
+                <strong>2</strong> Cristian Lema
+            </div>
+            <div class="jugador">
+                <img src="../img/3.png" alt="Marcelo Saracchi">
+                <strong>3</strong> Marcelo Saracchi
+            </div>
+            <div class="jugador">
+                <img src="../img/4.png" alt="Nicolas Figal">
+                <strong>4</strong> Nicolas Figal
+            </div>
+            <div class="jugador">
+                <img src="../img/5.png" alt="Rodrigo Battaglia">
+                <strong>5</strong> Rodrigo Battaglia
+            </div>
+            <div class="jugador">
+                <img src="../img/6.png" alt="Marcos Rojo">
+                <strong>6</strong> Marcos Rojo
+            </div>
+            <div class="jugador">
+                <img src="../img/7.png" alt="Exequiel Zeballos">
+                <strong>7</strong> Exequiel Zeballos
+            </div>
+            <div class="jugador">
+                <img src="../img/8.png" alt="Carlos Palacios">
+                <strong>8</strong> Carlos Palacios
+            </div>
+            <div class="jugador">
+                <img src="../img/9.png" alt="Milton Gimenez">
+                <strong>9</strong> Milton Gimenez
+            </div>
+            <div class="jugador">
+                <img src="../img/10.png" alt="Edinson Cavani">
+                <strong>10</strong> Edinson Cavani
+            </div>
+            <div class="jugador">
+                <img src="../img/11.png" alt="Lucas Janson">
+                <strong>11</strong> Lucas Janson
+            </div>
+            <div class="jugador">
+                <img src="../img/12.png" alt="Leandro Brey">
+                <strong>12</strong> Leandro Brey
+            </div>
+            <div class="jugador">
+                <img src="../img/13.png" alt="Javier García">
+                <strong>13</strong> Javier García
+            </div>
+            <div class="jugador">
+                <img src="../img/14.png" alt="Ignacio Miramón">
+                <strong>14</strong> Ignacio Miramón
+            </div>
+            <div class="jugador">
+                <img src="../img/15.png" alt="Williams Alarcón">
+                <strong>15</strong> Williams Alarcón
+            </div>
+            <div class="jugador">
+                <img src="../img/16.png" alt="Miguel Angel Merentiel">
+                <strong>16</strong> Miguel Angel Merentiel
+            </div>
+            <div class="jugador">
+                <img src="../img/17.png" alt="Luis Advíncula">
+                <strong>17</strong> Luis Advíncula
+            </div>
+            <div class="jugador">
+                <img src="../img/18.png" alt="Frank Fabra">
+                <strong>18</strong> Frank Fabra
+            </div>
+            <div class="jugador">
+                <img src="../img/19.png" alt="Agustín Martegani">
+                <strong>19</strong> Agustín Martegani
+            </div>
+            <div class="jugador">
+                <img src="../img/20.png" alt="Alan Velasco">
+                <strong>20</strong> Alan Velasco
+            </div>
+            <div class="jugador">
+                <img src="../img/21.png" alt="Ander Herrera">
+                <strong>21</strong> Ander Herrera
+            </div>
+            <div class="jugador">
+                <img src="../img/22.png" alt="Kevin Zenon">
+                <strong>22</strong> Kevin Zenon
+            </div>
+            <div class="jugador">
+                <img src="../img/23.png" alt="Lautaro Blanco">
+                <strong>23</strong> Lautaro Blanco
+            </div>
+            <div class="jugador">
+                <img src="../img/24.png" alt="Juan Barinaga">
+                <strong>24</strong> Juan Barinaga
+            </div>
+            <div class="jugador">
+                <img src="../img/25.png" alt="Agustín Marchesín">
+                <strong>25</strong> Agustín Marchesín
+            </div>
+            <div class="jugador">
+                <img src="../img/30.png" alt="Tomás Belmonte">
+                <strong>30</strong> Tomás Belmonte
+            </div>
+            <div class="jugador">
+                <img src="../img/32.png" alt="Ayrton Costa">
+                <strong>32</strong> Ayrton Costa
+            </div>
+            <div class="jugador">
+                <img src="../img/33.png" alt="Brian Aguirre">
+                <strong>33</strong> Brian Aguirre
+            </div>
+            <div class="jugador">
+                <img src="../img/34.png" alt="Mateo Mendía">
+                <strong>34</strong> Mateo Mendía
+            </div>
+            <div class="jugador">
+                <img src="../img/35.png" alt="Valentino Simoni">
+                <strong>35</strong> Valentino Simoni
+            </div>
+            <div class="jugador">
+                <img src="../img/36.png" alt="Esteban Rolón">
+                <strong>36</strong> Esteban Rolón
+            </div>
+            <div class="jugador">
+                <img src="../img/37.png" alt="Sebastián Díaz Robles">
+                <strong>37</strong> Sebastián Díaz Robles
+            </div>
+            <div class="jugador">
+                <img src="../img/38.png" alt="Camilo Rey Domenech">
+                <strong>38</strong> Camilo Rey Domenech
+            </div>
+            <div class="jugador">
+                <img src="../img/40.png" alt="Lautaro Di Lollo">
+                <strong>40</strong> Lautaro Di Lollo
+            </div>
+            <div class="jugador">
+                <img src="../img/41.png" alt="Iker Zufiaurre">
+                <strong>41</strong> Iker Zufiaurre
+            </div>
+            <div class="jugador">
+                <img src="../img/42.png" alt="Lucas Blondel">
+                <strong>42</strong> Lucas Blondel
+            </div>
+            <div class="jugador">
+                <img src="../img/43.png" alt="Milton Delgado">
+                <strong>43</strong> Milton Delgado
+            </div>
+            <div class="jugador">
+                <img src="../img/46.png" alt="Juan Cruz Payal">
+                <strong>46</strong> Juan Cruz Payal
+            </div>
+            <div class="jugador">
+                <img src="../img/48.png" alt="Dylan Gorosito">
+                <strong>48</strong> Dylan Gorosito
+            </div>
+            <div class="jugador">
+                <img src="../img/51.png" alt="Santiago Dalmasso">
+                <strong>51</strong> Santiago Dalmasso
+            </div>
+            <div class="jugador">
+                <img src="../img/52.png" alt="Walter Molas">
+                <strong>52</strong> Walter Molas
+            </div>
+            <div class="jugador">
+                <img src="../img/53.png" alt="Joaquín Ruíz">
+                <strong>53</strong> Joaquín Ruíz
             </div>
         </div>
-    </nav>
+    </div>
+  </main>
 
-    <!-- Cuerpo de la página -->
-    <main class="main-content">
+  <footer class="footer mt-5 py-4 text-center">
+    <div class="redes-sociales">
+      <a href="https://www.youtube.com/@ElCanaldeBoca" target="_blank" rel="noopener"><strong>YOUTUBE</strong></a>
+      <a href="https://www.instagram.com/bocajrs/" target="_blank" rel="noopener"><strong>INSTAGRAM</strong></a>
+      <a href="https://www.facebook.com/BocaJuniors/" target="_blank" rel="noopener"><strong>FACEBOOK</strong></a>
+      <a href="https://x.com/BocaJrsOficial" target="_blank" rel="noopener"><strong>TWITTER</strong></a>
+      <a href="https://www.tiktok.com/@bocajuniors" target="_blank" rel="noopener"><strong>TIKTOK</strong></a>
+      <a href="https://www.bocajuniors.com.ar/contacto" target="_blank" rel="noopener"><strong>CONTACTANOS</strong></a>
+    </div>
+  </footer>
 
-        <!-- Lista de jugadores -->
-        <div class="plantel">
-            <h2>El Plantel - Primera División</h2>
-            <div class="plantel-contenedor">
-                <div class="jugador">
-                    <img src="../img/1.png" alt="Sergio Romero">
-                    <strong>1</strong> Sergio Romero
-                </div>
-                <div class="jugador">
-                    <img src="../img/2.png" alt="Cristian Lema">
-                    <strong>2</strong> Cristian Lema
-                </div>
-                <div class="jugador">
-                    <img src="../img/3.png" alt="Marcelo Saracchi">
-                    <strong>3</strong> Marcelo Saracchi
-                </div>
-                <div class="jugador">
-                    <img src="../img/4.png" alt="Nicolas Figal">
-                    <strong>4</strong> Nicolas Figal
-                </div>
-                <div class="jugador">
-                    <img src="../img/5.png" alt="Rodrigo Battaglia">
-                    <strong>5</strong> Rodrigo Battaglia
-                </div>
-                <div class="jugador">
-                    <img src="../img/6.png" alt="Marcos Rojo">
-                    <strong>6</strong> Marcos Rojo
-                </div>
-                <div class="jugador">
-                    <img src="../img/7.png" alt="Exequiel Zeballos">
-                    <strong>7</strong> Exequiel Zeballos
-                </div>
-                <div class="jugador">
-                    <img src="../img/8.png" alt="Carlos Palacios">
-                    <strong>8</strong> Carlos Palacios
-                </div>
-                <div class="jugador">
-                    <img src="../img/9.png" alt="Milton Gimenez">
-                    <strong>9</strong> Milton Gimenez
-                </div>
-                <div class="jugador">
-                    <img src="../img/10.png" alt="Edinson Cavani">
-                    <strong>10</strong> Edinson Cavani
-                </div>
-                <div class="jugador">
-                    <img src="../img/11.png" alt="Lucas Janson">
-                    <strong>11</strong> Lucas Janson
-                </div>
-                <div class="jugador">
-                    <img src="../img/12.png" alt="Leandro Brey">
-                    <strong>12</strong> Leandro Brey
-                </div>
-                <div class="jugador">
-                    <img src="../img/13.png" alt="Javier García">
-                    <strong>13</strong> Javier García
-                </div>
-                <div class="jugador">
-                    <img src="../img/14.png" alt="Ignacio Miramón">
-                    <strong>14</strong> Ignacio Miramón
-                </div>
-                <div class="jugador">
-                    <img src="../img/15.png" alt="Williams Alarcón">
-                    <strong>15</strong> Williams Alarcón
-                </div>
-                <div class="jugador">
-                    <img src="../img/16.png" alt="Miguel Angel Merentiel">
-                    <strong>16</strong> Miguel Angel Merentiel
-                </div>
-                <div class="jugador">
-                    <img src="../img/17.png" alt="Luis Advíncula">
-                    <strong>17</strong> Luis Advíncula
-                </div>
-                <div class="jugador">
-                    <img src="../img/18.png" alt="Frank Fabra">
-                    <strong>18</strong> Frank Fabra
-                </div>
-                <div class="jugador">
-                    <img src="../img/19.png" alt="Agustín Martegani">
-                    <strong>19</strong> Agustín Martegani
-                </div>
-                <div class="jugador">
-                    <img src="../img/20.png" alt="Alan Velasco">
-                    <strong>20</strong> Alan Velasco
-                </div>
-                <div class="jugador">
-                    <img src="../img/21.png" alt="Ander Herrera">
-                    <strong>21</strong> Ander Herrera
-                </div>
-                <div class="jugador">
-                    <img src="../img/22.png" alt="Kevin Zenon">
-                    <strong>22</strong> Kevin Zenon
-                </div>
-                <div class="jugador">
-                    <img src="../img/23.png" alt="Lautaro Blanco">
-                    <strong>23</strong> Lautaro Blanco
-                </div>
-                <div class="jugador">
-                    <img src="../img/24.png" alt="Juan Barinaga">
-                    <strong>24</strong> Juan Barinaga
-                </div>
-                <div class="jugador">
-                    <img src="../img/25.png" alt="Agustín Marchesín">
-                    <strong>25</strong> Agustín Marchesín
-                </div>
-                <div class="jugador">
-                    <img src="../img/30.png" alt="Tomás Belmonte">
-                    <strong>30</strong> Tomás Belmonte
-                </div>
-                <div class="jugador">
-                    <img src="../img/32.png" alt="Ayrton Costa">
-                    <strong>32</strong> Ayrton Costa
-                </div>
-                <div class="jugador">
-                    <img src="../img/33.png" alt="Brian Aguirre">
-                    <strong>33</strong> Brian Aguirre
-                </div>
-                <div class="jugador">
-                    <img src="../img/34.png" alt="Mateo Mendía">
-                    <strong>34</strong> Mateo Mendía
-                </div>
-                <div class="jugador">
-                    <img src="../img/35.png" alt="Valentino Simoni">
-                    <strong>35</strong> Valentino Simoni
-                </div>
-                <div class="jugador">
-                    <img src="../img/36.png" alt="Esteban Rolón">
-                    <strong>36</strong> Esteban Rolón
-                </div>
-                <div class="jugador">
-                    <img src="../img/37.png" alt="Sebastián Díaz Robles">
-                    <strong>37</strong> Sebastián Díaz Robles
-                </div>
-                <div class="jugador">
-                    <img src="../img/38.png" alt="Camilo Rey Domenech">
-                    <strong>38</strong> Camilo Rey Domenech
-                </div>
-                <div class="jugador">
-                    <img src="../img/40.png" alt="Lautaro Di Lollo">
-                    <strong>40</strong> Lautaro Di Lollo
-                </div>
-                <div class="jugador">
-                    <img src="../img/41.png" alt="Iker Zufiaurre">
-                    <strong>41</strong> Iker Zufiaurre
-                </div>
-                <div class="jugador">
-                    <img src="../img/42.png" alt="Lucas Blondel">
-                    <strong>42</strong> Lucas Blondel
-                </div>
-                <div class="jugador">
-                    <img src="../img/43.png" alt="Milton Delgado">
-                    <strong>43</strong> Milton Delgado
-                </div>
-                <div class="jugador">
-                    <img src="../img/46.png" alt="Juan Cruz Payal">
-                    <strong>46</strong> Juan Cruz Payal
-                </div>
-                <div class="jugador">
-                    <img src="../img/48.png" alt="Dylan Gorosito">
-                    <strong>48</strong> Dylan Gorosito
-                </div>
-                <div class="jugador">
-                    <img src="../img/51.png" alt="Santiago Dalmasso">
-                    <strong>51</strong> Santiago Dalmasso
-                </div>
-                <div class="jugador">
-                    <img src="../img/52.png" alt="Walter Molas">
-                    <strong>52</strong> Walter Molas
-                </div>
-                <div class="jugador">
-                    <img src="../img/53.png" alt="Joaquín Ruíz">
-                    <strong>53</strong> Joaquín Ruíz
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <a href="https://www.youtube.com/@ElCanaldeBoca"><strong>YOUTUBE</strong></a>
-            <a href="https://www.instagram.com/bocajrs/"><strong>INSTAGRAM</strong></a>
-            <a href="https://www.facebook.com/BocaJuniors/"><strong>FACEBOOK</strong></a>
-            <a href="https://x.com/BocaJrsOficial"><strong>TWITTER</strong></a>
-            <a href="https://www.tiktok.com/@bocajuniors"><strong>TIKTOK</strong></a>
-            <a href="https://www.bocajuniors.com.ar/contacto"><strong>CONTACTANOS</strong></a>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

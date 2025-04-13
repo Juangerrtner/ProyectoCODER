@@ -1,0 +1,93 @@
+@use 'variables' as *;
+
+.labombonera1 {
+    font-family: $fuente-principal;
+    background-color: #f9f9f9;
+    color: #222;
+  
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: $espacio-large $espacio-medium;
+  
+      section {
+        margin-bottom: $espacio-large;
+        padding: $espacio-medium;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+        h2, h3 {
+          font-family: $fuente-secundaria;
+          color: $azul1;
+          margin-bottom: $espacio-medium;
+        }
+      }
+  
+      // Datos generales
+      .seccion-datos {
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 5px 0;
+            strong {
+              color: $azul2;
+            }
+          }
+        }
+  
+        img {
+          width: 100%;
+          margin-top: $espacio-medium;
+          border-radius: 8px;
+        }
+      }
+  
+      // Historia
+      .seccion-historia {
+        p {
+          line-height: 1.7;
+          margin-bottom: $espacio-small;
+        }
+      }
+  
+      // Línea de tiempo
+      .seccion-linea-tiempo {
+        .evento {
+          position: relative;
+          padding-left: 20px;
+          margin-bottom: 10px;
+          border-left: 3px solid $amarillo;
+  
+          span {
+            font-weight: bold;
+            color: $azul1;
+            display: block;
+          }
+        }
+      }
+  
+      // Testimonios
+      .seccion-testimonios {
+        blockquote {
+          font-style: italic;
+          margin: $espacio-medium 0;
+          padding-left: $espacio-medium;
+          border-left: 4px solid $amarillo;
+          color: #444;
+          background-color: #f1f1f1;
+          border-radius: 6px;
+          padding: $espacio-small $espacio-medium;
+        }
+  
+        cite {
+          display: block;
+          text-align: right;
+          font-weight: bold;
+          margin-top: $espacio-small;
+          color: $azul2;
+        }
+      }
+    }
+  }

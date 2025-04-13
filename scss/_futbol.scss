@@ -1,0 +1,53 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+.main-content {
+    padding: $espacio-large $espacio-medium;
+    background-color: #f9f9f9;
+  
+    .plantel {
+      h2 {
+        font-size: $font-size-h1;
+        color: $azul1;
+        text-align: center;
+        margin-bottom: $espacio-large;
+        font-family: $fuente-secundaria;
+      }
+  
+      .plantel-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: $espacio-medium;
+        justify-items: center;
+      }
+  
+      .jugador {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: $espacio-small;
+        text-align: center;
+        font-size: $font-size-base;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+        img {
+          width: 100%;
+          max-width: 120px;
+          border-radius: 4px;
+          margin-bottom: $espacio-small;
+        }
+  
+        strong {
+          display: block;
+          font-weight: bold;
+          font-size: 18px;
+          color: $azul2;
+        }
+  
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }

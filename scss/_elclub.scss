@@ -1,0 +1,92 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+#banner-elclub,
+.imagen-autoridades {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: $espacio-medium;
+}
+
+.ruta-el-club {
+  margin-left: $espacio-medium;
+  margin-bottom: $espacio-large;
+  font-size: $font-size-base;
+}
+
+.titulos-elclub {
+  margin-left: $espacio-large;
+
+  h2, h3 {
+    color: $azul2;
+    position: relative;
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+    margin-bottom: $espacio-small;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: $amarillo;
+    }
+  }
+
+  h3 {
+    font-size: $font-size-h1;
+  }
+}
+
+.elclub {
+  margin-left: $espacio-large;
+
+  h4 {
+    color: $azul1;
+    font-size: 27px;
+    margin-bottom: $espacio-small;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 10px 0;
+      position: relative;
+      padding-left: 25px;
+
+      &::before {
+        content: "★";
+        position: absolute;
+        left: 0;
+        color: $amarillo;
+      }
+    }
+  }
+}
+
+.info-economica {
+  font-size: $font-size-h1;
+  color: $azul2;
+  margin-left: $espacio-large;
+  margin-top: $espacio-large;
+  margin-bottom: $espacio-medium;
+}
+
+.elclub2 {
+  display: flex;
+  justify-content: center;
+  gap: $espacio-medium;
+  margin-top: $espacio-medium;
+  margin-bottom: $espacio-large;
+
+  .boton {
+    @include boton-amarillo();
+  }
+}

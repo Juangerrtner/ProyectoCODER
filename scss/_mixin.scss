@@ -1,0 +1,46 @@
+@use 'variables' as *; 
+
+@mixin media-query($size) {
+    @if $size == mobile {
+        @media (max-width: $breakpoint-mobile) { @content; }
+    }
+    @else if $size == tablet {
+        @media (max-width: $breakpoint-tablet) { @content; }
+    }
+}
+
+@mixin boton-amarillo {
+    display: inline-block;
+    padding: 25px 40px;
+    background-color: $amarillo;
+    color: $azul1;
+    border-radius: 70px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    text-align: center;
+  
+    &:hover {
+      background-color: $azul1;
+      color: $amarillo;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @mixin caja-estilizada($fondo, $borde, $sombra) {
+    background-color: $fondo;
+    border: 2px solid $borde;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px $sombra;
+}
+
+@mixin texto-destacado($color, $tamano, $peso) {
+    color: $color;
+    font-size: $tamano;
+    font-weight: $peso;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

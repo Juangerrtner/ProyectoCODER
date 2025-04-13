@@ -1,0 +1,420 @@
+@use 'variables' as *;
+@use 'mixin' as *; 
+
+// HEADER
+
+// Tablet
+@include media-query(tablet) { 
+  header {
+    padding: 0 20px;
+
+    .header__brand {
+      font-size: 14px;
+    }
+
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+// Mobile
+@include media-query(mobile) { 
+  header {
+    flex-direction: column;
+    padding: 0 15px;
+
+    .header__brand {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+
+// MENÚ
+
+// Tablet
+@include media-query(tablet) { 
+  .navbar {
+    padding: $espacio-small $espacio-medium;
+    min-height: 50px;
+
+    .navbar-brand {
+      font-size: 14px;
+    }
+
+    .navbar-toggler {
+      padding: 8px;
+    }
+
+    .navbar-collapse {
+      margin-top: $espacio-small;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: $espacio-small $espacio-medium;
+    }
+  }
+}
+
+// Mobile
+@include media-query(mobile) { 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $espacio-small $espacio-small;
+    min-height: 60px;
+
+    .navbar-brand {
+      font-size: 14px;
+      margin-top: $espacio-small;
+    }
+
+    .navbar-toggler {
+      padding: 10px;
+    }
+
+    .navbar-collapse {
+      width: 100%;
+      margin-top: $espacio-small;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: $espacio-small $espacio-medium;
+    }
+  }
+}
+
+// FOOTER
+
+// Tablet
+@include media-query(tablet) { 
+  footer {
+    padding: $espacio-medium 0; 
+  }
+
+  .footer {
+    margin-left: $espacio-small;
+    gap: $espacio-small;
+  }
+
+  a {
+    font-size: 14px; 
+  }
+}
+
+// Mobile
+@include media-query(mobile) {
+  footer {
+    padding: $espacio-small 0;
+    text-align: center; 
+  }
+
+  .footer {
+    justify-content: center; 
+    margin-left: 0;
+    gap: $espacio-small;
+  }
+
+  a {
+    font-size: 12px; 
+  }
+}
+
+// INDEX
+
+// Tablet
+@include media-query(tablet) {
+  .video-container {
+    margin-left: $espacio-medium;
+    margin-right: $espacio-medium;
+    gap: $espacio-medium;
+  }
+
+  .ultimas-noticias {
+    h2 {
+      font-size: 24px; 
+    }
+
+    ul {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+}
+
+
+// Mobile
+
+@include media-query(mobile) {
+  .video-container {
+    margin-top: $espacio-small;
+    margin-left: $espacio-small;
+    margin-right: $espacio-small;
+    gap: $espacio-small;
+  }
+
+  .ultimas-noticias {
+    h2 {
+      font-size: 22px; 
+    }
+
+    ul {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  .video-item {
+    &.grande {
+      max-width: 100%; 
+    }
+
+    &.chico {
+      max-width: 100%; 
+    }
+  }
+}
+
+// ELCLUB
+
+// Tablet
+@include media-query(tablet) {
+  .ruta-el-club {
+    font-size: 16px;
+    margin-left: $espacio-medium;
+  }
+
+  .titulos-elclub {
+    margin-left: $espacio-medium;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  .elclub {
+    margin-left: $espacio-medium;
+
+    h4 {
+      font-size: 24px;
+    }
+
+    ul li {
+      font-size: 16px;
+    }
+  }
+
+  .info-economica {
+    font-size: 28px;
+    margin-left: $espacio-medium;
+  }
+
+  .elclub2 {
+    flex-direction: row;
+    gap: $espacio-medium;
+  }
+
+  .boton {
+    padding: 20px 35px;
+    font-size: 18px;
+  }
+
+  #banner-elclub,
+  .imagen-autoridades {
+    height: 250px;
+  }
+
+  .navbar-nav {
+    font-size: 16px;
+  }
+}
+
+// Mobile
+@include media-query(mobile) {
+  .ruta-el-club {
+    font-size: 14px;
+    margin-left: $espacio-small;
+  }
+
+  .titulos-elclub {
+    margin-left: $espacio-small;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .elclub {
+    margin-left: $espacio-small;
+
+    h4 {
+      font-size: 22px;
+    }
+
+    ul li {
+      font-size: 14px;
+    }
+  }
+
+  .info-economica {
+    font-size: 24px;
+    margin-left: $espacio-small;
+  }
+
+  .elclub2 {
+    flex-direction: column;
+    gap: $espacio-small;
+  }
+
+  .boton {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  #banner-elclub,
+  .imagen-autoridades {
+    height: 200px;
+  }
+
+  .navbar-nav {
+    font-size: 14px;
+  }
+}
+
+// LABOMBONERA
+
+// Tablet
+.labombonera1 {
+
+  @include media-query(tablet) {
+    .main-content {
+      padding: $espacio-medium;
+    }
+
+    section {
+      padding: $espacio-small $espacio-medium;
+    }
+  }
+  }
+
+  // Mobile
+  .main-content {
+    padding: $espacio-small;
+  }
+
+  .seccion-datos,
+  .seccion-historia,
+  .seccion-linea-tiempo,
+  .seccion-testimonios {
+    padding: $espacio-small;
+  }
+
+  .seccion-datos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .seccion-linea-tiempo .evento {
+    font-size: 14px;
+    margin-bottom: $espacio-small;
+  }
+
+  .seccion-testimonios blockquote {
+    font-size: 14px;
+    padding: $espacio-small;
+  }
+
+  .seccion-testimonios cite {
+    font-size: 13px;
+  }
+
+// FUTBOL
+
+// Tablet
+@include media-query(tablet) {
+  .plantel {
+    flex-direction: row; 
+    padding: $espacio-medium; 
+  }
+
+  .jugador {
+    width: 48%; 
+    margin-bottom: $espacio-small; 
+    text-align: center; 
+  }
+
+  .plantel-contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+  }
+}
+
+// Mobile
+@include media-query(mobile) {
+  .plantel {
+    flex-direction: column;
+    padding: $espacio-small; 
+  }
+
+  .jugador {
+    margin-bottom: $espacio-medium; 
+    text-align: center;
+  }
+
+  .plantel-contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+  }
+}
+
+// PRODUCTOS
+
+// Tablet
+@include media-query(tablet) {
+  .producto {
+      flex: 0 0 48%;
+  }
+}
+
+// Mobile
+@include media-query(mobile) {
+  .producto {
+      flex: 0 0 100%;
+  }
+}
