@@ -8,7 +8,7 @@
 }
 
 /* Ruta de navegación */
-.ruta-el-club {
+.breadcrumb {
   margin-bottom: $espacio-medium;
   font-size: $font-size-base;
   color: $azul1;
@@ -33,7 +33,7 @@
 }
 
 /* Sección de noticias */
-.Noticias1 {
+.noticias-section {
   margin-bottom: $espacio-large;
 
   h2 {
@@ -108,7 +108,7 @@
 }
 
 /* Estilos para el fixture de próximos partidos */
-.fixture {
+.fixture-section {
   background-color: $azul1;
   padding: $espacio-medium;
   border-radius: 10px;

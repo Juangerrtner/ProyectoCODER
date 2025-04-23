@@ -90,3 +90,37 @@
     @include boton-amarillo();
   }
 }
+
+// Estilos de la ruta de navegación
+.ruta-el-club a {
+  color: $azul2;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  span {
+    font-weight: normal;
+  }
+}
+
+#autoridades {
+  margin-bottom: $espacio-large;
+}
+
+// Sección de información económica
+#info-economica {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-medium;
+}
+
+#info-economica .boton {
+  @include boton-amarillo();
+}
+
+.elclub ul {
+  padding-left: 20px; // Mejora en el espaciado
+}

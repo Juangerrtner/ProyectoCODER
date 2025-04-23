@@ -12,12 +12,10 @@ header {
   align-items: center;
   padding: 0 10px;
 }
-
 header img {
   height: 100px;
   width: 100px;
 }
-
 header .header__brand {
   color: white;
   font-size: 16px;
@@ -32,7 +30,6 @@ header .header__brand {
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar .navbar-brand {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -40,25 +37,20 @@ header .header__brand {
   font-weight: bold;
   transition: color 0.3s;
 }
-
 .navbar .navbar-brand:hover {
   color: #f6b800;
 }
-
 .navbar .navbar-toggler {
   border: 2px solid #f6b800;
   padding: 6px;
 }
-
 .navbar .navbar-toggler .navbar-toggler-icon {
   filter: brightness(0) invert(1);
 }
-
 .navbar .navbar-collapse {
   background-color: rgb(2, 35, 109);
   margin-top: 10px;
 }
-
 .navbar .navbar-collapse .nav-link {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -67,7 +59,6 @@ header .header__brand {
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .navbar .navbar-collapse .nav-link:hover {
   background-color: #f6b800;
   color: #003291;
@@ -82,7 +73,6 @@ footer {
   margin-bottom: 0;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 }
-
 footer .footer {
   display: flex;
   justify-content: flex-start;
@@ -90,7 +80,6 @@ footer .footer {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 footer a {
   color: #feffff;
   font-family: "Montserrat", sans-serif;
@@ -98,7 +87,6 @@ footer a {
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
 footer a:hover {
   color: #f6b800;
   transform: scale(1.1);
@@ -239,23 +227,55 @@ html, body {
   }
 }
 @media (max-width: 576px) {
+  .ultimas-noticias h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .ultimas-noticias ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    padding-left: 0;
+  }
+  .ultimas-noticias li a {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .ultimas-noticias li a img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .ultimas-noticias li a span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
   .video-container {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     gap: 10px;
-  }
-  .ultimas-noticias h2 {
-    font-size: 22px;
-  }
-  .ultimas-noticias ul {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 20px;
   }
   .video-item.grande {
     max-width: 100%;
   }
   .video-item.chico {
     max-width: 100%;
+  }
+  .video-item iframe {
+    width: 100%;
+    height: 300px;
   }
 }
 @media (max-width: 768px) {
@@ -352,6 +372,7 @@ html, body {
     padding: 10px 20px;
   }
 }
+
 .main-content {
   padding: 10px;
 }
@@ -387,15 +408,15 @@ html, body {
     flex-direction: row;
     padding: 20px;
   }
-  .jugador {
-    width: 48%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
   .plantel-contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .jugador {
+    width: 48%;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
@@ -403,14 +424,14 @@ html, body {
     flex-direction: column;
     padding: 10px;
   }
+  .plantel-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
   .jugador {
     margin-bottom: 20px;
     text-align: center;
-  }
-  .plantel-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
@@ -421,6 +442,82 @@ html, body {
 @media (max-width: 576px) {
   .producto {
     flex: 0 0 100%;
+  }
+}
+@media (max-width: 576px) {
+  .noticias-section ul {
+    flex-direction: column;
+  }
+  .noticias-section li {
+    flex: 1 1 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .noticias-section img {
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .noticias-section span {
+    font-size: 18px;
+    bottom: 5px;
+    left: 10px;
+    padding: 4px 8px;
+  }
+  .fixture {
+    padding: 10px;
+  }
+  .fixture h2 {
+    font-size: 22px;
+  }
+  .fixture ul {
+    margin-top: 10px;
+  }
+  .fixture li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .fixture .fecha, .fixture .equipo, .fixture .hora, .fixture .lugar {
+    display: block;
+    margin-bottom: 3px;
+  }
+}
+@media (max-width: 576px) {
+  .noticias-section ul {
+    flex-direction: column;
+  }
+  .noticias-section li {
+    flex: 1 1 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .noticias-section img {
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .noticias-section span {
+    font-size: 18px;
+    bottom: 5px;
+    left: 10px;
+    padding: 4px 8px;
+  }
+  .fixture-section {
+    padding: 10px;
+  }
+  .fixture-section h2 {
+    font-size: 22px;
+  }
+  .fixture-section ul {
+    margin-top: 10px;
+  }
+  .fixture-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .fixture-section .fecha, .fixture-section .equipo, .fixture-section .hora, .fixture-section .lugar {
+    display: block;
+    margin-bottom: 3px;
   }
 }
 #banner-elclub,
@@ -440,17 +537,14 @@ html, body {
 .titulos-elclub {
   margin-left: 50px;
 }
-
 .titulos-elclub h2, .titulos-elclub h3 {
   color: rgb(2, 35, 109);
   position: relative;
 }
-
 .titulos-elclub h2 {
   font-size: 22px;
   margin-bottom: 10px;
 }
-
 .titulos-elclub h2::before {
   content: "";
   position: absolute;
@@ -460,7 +554,6 @@ html, body {
   height: 4px;
   background-color: #f6b800;
 }
-
 .titulos-elclub h3 {
   font-size: 39px;
 }
@@ -468,24 +561,20 @@ html, body {
 .elclub {
   margin-left: 50px;
 }
-
 .elclub h4 {
   color: #003291;
   font-size: 27px;
   margin-bottom: 10px;
 }
-
 .elclub ul {
   list-style: none;
   padding: 0;
 }
-
 .elclub ul li {
   margin: 10px 0;
   position: relative;
   padding-left: 25px;
 }
-
 .elclub ul li::before {
   content: "★";
   position: absolute;
@@ -508,7 +597,6 @@ html, body {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 .elclub2 .boton {
   display: inline-block;
   padding: 25px 40px;
@@ -521,7 +609,6 @@ html, body {
   font-size: 18px;
   text-align: center;
 }
-
 .elclub2 .boton:hover {
   background-color: #003291;
   color: #f6b800;
@@ -529,11 +616,55 @@ html, body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.ruta-el-club a {
+  color: rgb(2, 35, 109);
+  font-weight: bold;
+  text-decoration: none;
+}
+.ruta-el-club a:hover {
+  text-decoration: underline;
+}
+.ruta-el-club a span {
+  font-weight: normal;
+}
+
+#autoridades {
+  margin-bottom: 50px;
+}
+
+#info-economica {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#info-economica .boton {
+  display: inline-block;
+  padding: 25px 40px;
+  background-color: #f6b800;
+  color: #003291;
+  border-radius: 70px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  text-align: center;
+}
+#info-economica .boton:hover {
+  background-color: #003291;
+  color: #f6b800;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.elclub ul {
+  padding-left: 20px;
+}
+
 .main-content {
   padding: 50px 20px;
   background-color: #f9f9f9;
 }
-
 .main-content .plantel h2 {
   font-size: 39px;
   color: #003291;
@@ -541,14 +672,12 @@ html, body {
   margin-bottom: 50px;
   font-family: "Montserrat", sans-serif;
 }
-
 .main-content .plantel .plantel-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 20px;
   justify-items: center;
 }
-
 .main-content .plantel .jugador {
   background-color: white;
   border-radius: 8px;
@@ -558,21 +687,18 @@ html, body {
   font-size: 16px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .main-content .plantel .jugador img {
   width: 100%;
   max-width: 120px;
   border-radius: 4px;
   margin-bottom: 10px;
 }
-
 .main-content .plantel .jugador strong {
   display: block;
   font-weight: bold;
   font-size: 18px;
   color: rgb(2, 35, 109);
 }
-
 .main-content .plantel .jugador:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
@@ -583,13 +709,11 @@ html, body {
   background-color: #f9f9f9;
   color: #222;
 }
-
 .labombonera1 .main-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
 }
-
 .labombonera1 .main-content section {
   margin-bottom: 50px;
   padding: 20px;
@@ -597,50 +721,52 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
-.labombonera1 .main-content section h2, .labombonera1 .main-content section h3 {
+.labombonera1 .main-content section h2,
+.labombonera1 .main-content section h3 {
   font-family: "Montserrat", sans-serif;
   color: #003291;
   margin-bottom: 20px;
 }
-
+.labombonera1 .main-content section h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.labombonera1 .main-content section h3 {
+  font-size: 1.5rem;
+}
 .labombonera1 .main-content .seccion-datos ul {
   list-style: none;
   padding: 0;
 }
-
 .labombonera1 .main-content .seccion-datos ul li {
   padding: 5px 0;
+  font-size: 1.1rem;
 }
-
 .labombonera1 .main-content .seccion-datos ul li strong {
   color: rgb(2, 35, 109);
 }
-
 .labombonera1 .main-content .seccion-datos img {
   width: 100%;
   margin-top: 20px;
   border-radius: 8px;
+  object-fit: cover;
 }
-
 .labombonera1 .main-content .seccion-historia p {
   line-height: 1.7;
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
-
 .labombonera1 .main-content .seccion-linea-tiempo .evento {
   position: relative;
   padding-left: 20px;
   margin-bottom: 10px;
   border-left: 3px solid #f6b800;
 }
-
 .labombonera1 .main-content .seccion-linea-tiempo .evento span {
   font-weight: bold;
   color: #003291;
   display: block;
 }
-
 .labombonera1 .main-content .seccion-testimonios blockquote {
   font-style: italic;
   margin: 20px 0;
@@ -650,8 +776,8 @@ html, body {
   background-color: #f1f1f1;
   border-radius: 6px;
   padding: 10px 20px;
+  font-size: 1.05rem;
 }
-
 .labombonera1 .main-content .seccion-testimonios cite {
   display: block;
   text-align: right;
@@ -668,7 +794,7 @@ html, body {
 }
 
 /* Ruta de navegación */
-.ruta-el-club {
+.breadcrumb {
   margin-bottom: 20px;
   font-size: 16px;
   color: #003291;
@@ -676,29 +802,25 @@ html, body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.ruta-el-club a {
+.breadcrumb a {
   color: #f6b800;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
-.ruta-el-club a:hover {
+.breadcrumb a:hover {
   text-decoration: underline;
   text-shadow: 0 0 10px #f6b800;
 }
-
-.ruta-el-club span {
+.breadcrumb span {
   color: #555;
 }
 
 /* Sección de noticias */
-.Noticias1 {
+.noticias-section {
   margin-bottom: 50px;
 }
-
-.Noticias1 h2 {
+.noticias-section h2 {
   color: #003291;
   font-family: "Montserrat", sans-serif, sans-serif;
   font-size: 22px;
@@ -707,8 +829,7 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
-.Noticias1 ul {
+.noticias-section ul {
   padding: 0;
   list-style-type: none;
   margin: 0;
@@ -716,8 +837,7 @@ html, body {
   flex-wrap: wrap;
   gap: 20px;
 }
-
-.Noticias1 li {
+.noticias-section li {
   flex: 1 1 calc(33.333% - 20px);
   background-color: white;
   border-radius: 8px;
@@ -726,13 +846,11 @@ html, body {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding: 10px;
 }
-
-.Noticias1 li:hover {
+.noticias-section li:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-.Noticias1 li a {
+.noticias-section li a {
   text-decoration: none;
   color: #003291;
   display: block;
@@ -740,12 +858,10 @@ html, body {
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
-
-.Noticias1 li a:hover {
+.noticias-section li a:hover {
   color: #f6b800;
 }
-
-.Noticias1 li img {
+.noticias-section li img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -753,8 +869,7 @@ html, body {
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
-
-.Noticias1 li span {
+.noticias-section li span {
   font-size: 22px;
   color: #003291;
   font-weight: bold;
@@ -769,42 +884,36 @@ html, body {
 }
 
 /* Estilos para el fixture de próximos partidos */
-.fixture {
+.fixture-section {
   background-color: #003291;
   padding: 20px;
   border-radius: 10px;
 }
-
-.fixture h2 {
+.fixture-section h2 {
   color: white;
   font-family: "Montserrat", sans-serif, sans-serif;
   font-size: 22px;
   margin-bottom: 20px;
 }
-
-.fixture ul {
+.fixture-section ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-.fixture li {
+.fixture-section li {
   color: white;
   margin-bottom: 10px;
   font-size: 16px;
 }
-
-.fixture li .fecha {
+.fixture-section li .fecha {
   font-weight: bold;
 }
-
-.fixture li .equipo {
+.fixture-section li .equipo {
   color: #f6b800;
   font-weight: bold;
 }
-
-.fixture li .hora,
-.fixture li .lugar {
+.fixture-section li .hora,
+.fixture-section li .lugar {
   color: #ddd;
 }
 
@@ -846,7 +955,6 @@ html, body {
   margin-bottom: 20px;
   box-sizing: border-box; /* Asegura que el padding y el borde no desborden */
 }
-
 .producto .card {
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -854,19 +962,16 @@ html, body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .producto .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 .producto .card .card-img-top {
   width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .producto .card .card-body {
   background-color: #ffffff;
   padding: 10px;
@@ -875,7 +980,6 @@ html, body {
   align-items: center;
   text-align: center;
 }
-
 .producto .card .card-body .card-title {
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
@@ -883,14 +987,12 @@ html, body {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .producto .card .card-body .card-text {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: rgb(2, 35, 109);
   margin-bottom: 10px;
 }
-
 .producto .card .card-body .btn-warning {
   background-color: #f6b800;
   color: #000;
@@ -900,9 +1002,8 @@ html, body {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .producto .card .card-body .btn-warning:hover {
-  background-color: #c39200;
+  background-color: rgb(195, 145.8536585366, 0);
   color: white;
 }
 
@@ -933,7 +1034,6 @@ main {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .video-container .video-item {
   position: relative;
   overflow: hidden;
@@ -942,23 +1042,19 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .video-container .video-item.grande {
   flex: 2;
   max-width: 600px;
 }
-
 .video-container .video-item.chico {
   flex: 1.5;
   max-width: 400px;
 }
-
 .video-container .video-item iframe {
   width: 100%;
   height: 315px;
   border-radius: 5px;
 }
-
 .video-container .video-item:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
@@ -968,7 +1064,6 @@ main {
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
-
 .ultimas-noticias h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
@@ -983,7 +1078,6 @@ main {
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-
 .ultimas-noticias ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -992,7 +1086,6 @@ main {
   justify-items: center;
   margin: 0;
 }
-
 .ultimas-noticias li {
   width: 100%;
   position: relative;
@@ -1001,7 +1094,6 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .ultimas-noticias li a {
   display: block;
   position: relative;
@@ -1009,7 +1101,6 @@ main {
   width: 100%;
   height: 100%;
 }
-
 .ultimas-noticias li img {
   width: 100%;
   height: 100%;
@@ -1017,7 +1108,6 @@ main {
   display: block;
   transition: transform 0.3s ease;
 }
-
 .ultimas-noticias li span {
   position: absolute;
   bottom: 0;
@@ -1031,16 +1121,13 @@ main {
   box-sizing: border-box;
   transition: opacity 0.3s ease;
 }
-
 .ultimas-noticias li:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
-
 .ultimas-noticias li:hover img {
   transform: scale(1.1);
 }
-
 .ultimas-noticias li:hover span {
   opacity: 0.8;
 }
@@ -1049,6 +1136,6 @@ main {
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
-} 
+}
 
 /*# sourceMappingURL=style.css.map */
